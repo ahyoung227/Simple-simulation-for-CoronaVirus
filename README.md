@@ -12,7 +12,7 @@
 
 <p>My code is based on youtube videos regarding collision detection, especailly the gravity and collision dectection code. Here is the link -> <a href="https://www.youtube.com/watch?v=XYzA_kPWyJ8&t=567s">collision detection — Part 1-2.</a></p>
 <br>
-<img src="covid19Simulator.gif" width="500px" height="300px">
+<img src="covid19Simulator.gif" width="700px" height="500px">
 
 ### Built With
 
