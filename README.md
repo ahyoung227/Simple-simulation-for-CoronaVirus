@@ -10,7 +10,7 @@
 
 <p>For version 2, I will add up more measures and graph.</p>
 
-<p>My code is based on youtube videos regarding collision detection, especailly the gravity and collision dectection code. Here is the link -> <a href="https://www.youtube.com/watch?v=XYzA_kPWyJ8&t=567s">collision detection — Part 1-2.</a></p>
+<p>My code is based on youtube videos regarding collision detection, especially the gravity and collision dectection code. Here is the link -> <a href="https://www.youtube.com/watch?v=XYzA_kPWyJ8&t=567s">collision detection — Part 1-2.</a></p>
 <br>
 <img src="covid19Simulator.gif" width="700px" height="500px">
 
