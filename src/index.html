@@ -1,0 +1,52 @@
+<div id="app">
+  <h1>Simple CoronaVirus Simulator</h1>
+  <canvas></canvas>
+
+  <br>
+     <select v-model="selected">
+      <option value="Upper East">Uppereast</option>
+      <option value="East Village">East Village</option>
+      <option value="Williamsburg">Williamsburg</option>
+      <option value="Jersey City">Jersey City</option>
+    </select>
+    <button @click="queryArea">Query {{ selected }} Data</button>
+    <button @click="printData">Start Simulation</button>
+
+  <br>
+  <h4>You should click the button below to update the data and start that data simulation!</h4>
+  <p>Activeness</p> 
+   <input class="slider" type="range" min = "0" max = "6" value = "50" v-model="activeness" step= "0.1">
+  <p>value: {{ activeness }}</p>
+  <p>postive cases</p>
+   <input class="slider" type="range" min = "0" max = "300" value = "1" step= 1 v-model="initialInfect">
+  <p>value: {{ initialInfect }}</p>
+  <p>Population per square mile/100</p>
+   <input class="slider" type="range" min = "0" max = "300" value = "1" step= "1" v-model="population">
+   <p>value: {{ population }}</p>
+  
+  <button @click="selectedArea">Update {{ selected }} data</button>
+
+      <pre>{{ selectedAreas }}</pre>
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- Add SDKs for Firebase Firestore-->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBb_SYDL2lZXzFMSJDIKvu0kvdnq8AgAu8",
+  authDomain: "covid19-simulator-d224a.firebaseapp.com",
+  databaseURL: "https://covid19-simulator-d224a.firebaseio.com",
+  projectId: "covid19-simulator-d224a",
+  storageBucket: "covid19-simulator-d224a.appspot.com",
+  messagingSenderId: "862343523215",
+  appId: "1:862343523215:web:88ab3ce0d3d909708979fa"
+};
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
