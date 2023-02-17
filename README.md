@@ -20,6 +20,7 @@
 - [CSS]
 - [JAVASCRIPT]
 - [VUE]
+- [FIREBASE]
 
 <!-- LICENSE -->
 
